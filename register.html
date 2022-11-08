@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/register.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <title>Login</title>
+</head>
+
+<body>
+
+
+
+  <div class="form d-none" onsubmit="return false" id="form">
+    <h1 class="form-title">Create your account</h1>
+    <p class="form-text">It’s free and easy</p>
+    <form class="forma">
+      <label class="forma-label" for="name">Full Name</label> <br>
+      <input onkeyup="auto()" id="name" type="text" class="forma-input" placeholder="Enter your name" name="" id=""><br>
+      <br>
+      <label class="forma-label" for="email">E-mail</label> <br>
+      <input onkeyup="auto()" id="email" type="email" class="forma-input" placeholder="Enter your email" name=""
+        id=""><br> <br>
+      <label class="forma-label" for="password">Passwor</label> <br>
+      <input onkeyup="auto()" id="password" type="password" class="forma-input" placeholder="Enter your password"
+        name="" id=""><br>
+      <button type="submit" onclick="register()" class="forma-button">Register</button>
+      </from>
+  </div>
+  <div class="form-sign  " onsubmit="return false" id="form-sign">
+    <h1 class="form-title color-icon"><i class="bi bi-qr-code-scan"></i></h1>
+    <h1 class="form-title">Welcome back!</h1>
+    <p class="form-text">Let's build someting great</p>
+    <div class="forma">
+      <form>
+        <label class="forma-label" for="emailSign">E-mail</label> <br>
+        <input onkeyup="auto() " id="emailSign" type="email" class="forma-input" placeholder="Enter your email" name=""
+          id=""><br> <br>
+        <label class="forma-label" for="passwordSign">Passwor</label> <br>
+        <input onkeyup="auto() " id="passwordSign" type="password" class="forma-input" placeholder="Enter your password"
+          name="" id=""><br>
+        <p class="register_now" onclick="ochil()">Create acount now !</p>
+
+        <button onclick="registerSign()" class="forma-button">Register</button>
+      </form><a href=""></a>
+    </div>
+
+  </div>
+
+  <script src="./register.js"></script>
+</body>
+
+</html>
